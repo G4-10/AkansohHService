@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akansoh Health Services - Delivering Multifaceted Healthcare Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- updated responsive grid & fixed tile heights for recent-work -->
+    <style>
+        .recent-work-grid.stylish-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            max-width: 1300px;
+            margin: 0 auto 60px auto; /* extra bottom space to avoid overlap */
+        }
+        .recent-work-grid.stylish-grid .rw-img {
+            /* fixed uniform tile height so images never overflow into next section */
+            height: 220px;
+            overflow: hidden;
+            border-radius: 12px;
+            min-height: 0;
+        }
+        .recent-work-grid.stylish-grid .rw-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        @media (max-width: 900px) {
+            .recent-work-grid.stylish-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .recent-work-grid.stylish-grid .rw-img {
+                height: 180px;
+            }
+        }
+        @media (max-width: 600px) {
+            .recent-work-grid.stylish-grid {
+                grid-template-columns: 1fr;
+            }
+            .recent-work-grid.stylish-grid .rw-img {
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-area" style="display:flex;align-items:center;gap:32px;">
+            <img src="images/logo2.png" alt="Akansoh Health Services Logo" class="logo" style="height:160px;width:160px;">
+            <div class="brand">
+                <h1 style="margin:0;font-size:2.2rem;font-weight:700;color:#17405e;">Akansoh Health Services</h1>
+                <span class="tagline" style="color:#2bb6a3;font-size:1.1rem;">Delivering Multifaceted Healthcare solutions for Wellness</span>
+            </div>
+        </div>
+        <nav style="flex:1;">
+            <ul style="display:flex;align-items:center;gap:40px;justify-content:flex-end;margin:0;">
+                <li><a href="index.html" class="active" style="color:#17405e;font-weight:500;">HOME</a></li>
+                <li><a href="about.html" style="color:#17405e;">ABOUT US</a></li>
+                <li><a href="services.html" style="color:#17405e;">SERVICES</a></li>
+                <li>
+                    <a href="contact.html" class="contact-btn"
+                       style="
+                           background:linear-gradient(90deg,#17405e 0%,#2bb6a3 100%);
+                           color:#fff;
+                           font-weight:900;
+                           padding:16px 40px;
+                           border-radius:12px;
+                           border:3px solid #fff;
+                           font-size:1.25rem;
+                           letter-spacing:1.5px;
+                           display:inline-block;
+                           box-shadow:0 4px 16px rgba(43,182,163,0.18),0 1.5px 0 #17405e inset;
+                           text-shadow:0 2px 8px rgba(23,64,94,0.18);
+                           transition:transform 0.18s,box-shadow 0.18s;
+                       "
+                       onmouseover="this.style.transform='scale(1.06)';this.style.boxShadow='0 8px 32px rgba(43,182,163,0.35),0 1.5px 0 #17405e inset';"
+                       onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(43,182,163,0.18),0 1.5px 0 #17405e inset';"
+                    >
+                        CONTACT US
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" style="position:relative;min-height:400px;display:flex;align-items:center;justify-content:center;background:url('https://images.pexels.com/photos/7551679/pexels-photo-7551679.jpeg?auto=compress&w=1200&q=80') center/cover no-repeat;">
+        <div style="position:absolute;top:0;left:0;width:100%;height:100%;
+            background:linear-gradient(90deg, rgba(23,64,94,0.50) 0%, rgba(43,182,163,0.40) 100%);
+            z-index:1;"></div>
+        <!-- Use #145c1b with 55% opacity for overlay: rgba(20,92,27,0.55) -->
+        <div class="hero-content" style="position:relative;z-index:2;text-align:center;width:100%;">
+            <h2 style="color:#fff;font-size:2.8rem;font-weight:700;margin-bottom:18px;">Compassionate Care for You</h2>
+            <p style="color:#fff;font-size:1.15rem;margin-bottom:32px;">
+                At Akansoh Health Services, we combine compassion and healthcare to build a healthy community, one individual at a time.
+            </p>
+            <a href="contact.html"
+               class="btn-primary"
+               style="
+                   background:linear-gradient(90deg,#17405e 0%,#2bb6a3 100%);
+                   color:#fff;
+                   font-weight:900;
+                   padding:22px 54px;
+                   border-radius:16px;
+                   box-shadow:0 6px 24px rgba(43,182,163,0.25),0 1.5px 0 #17405e inset;
+                   font-size:1.35rem;
+                   letter-spacing:1.5px;
+                   display:inline-block;
+                   border:3px solid #fff;
+                   transition:transform 0.18s,box-shadow 0.18s;
+                   text-shadow:0 2px 8px rgba(23,64,94,0.18);
+               "
+               onmouseover="this.style.transform='scale(1.06)';this.style.boxShadow='0 8px 32px rgba(43,182,163,0.35),0 1.5px 0 #17405e inset';"
+               onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 6px 24px rgba(43,182,163,0.25),0 1.5px 0 #17405e inset';"
+            >
+                CONTACT US
+            </a>
+        </div>
+    </section>
+    <main>
+        <section class="services-highlight">
+            <h2 style="color:#17405e;">Our Comprehensive Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <!-- Companion Services: friendly caregiver with elderly -->
+                    <img src="L:\Dubist\akansoh-services\images\companion service.jpg" alt="Companion Services">
+                    <h3 style="color:#17405e;">Companion Services</h3>
+                    <p>Non-medical assistance, observation, and care for adults with intellectual disabilities, promoting independence and emotional well-being.</p>
+                </div>
+                <div class="service-card">
+                    <!-- Homemaker/Chore: home care, cleaning, or meal prep -->
+                    <img src="https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Homemaker/Chore">
+                    <h3 style="color:#17405e;">Homemaker/Chore</h3>
+                    <p>Support with personal care, medication, housework, and meal preparation for individuals with intellectual disabilities.</p>
+                </div>
+                <div class="service-card">
+                    <!-- Transportation Services: patient transport or medical van -->
+                    <img src="https://images.pexels.com/photos/6129682/pexels-photo-6129682.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Transportation Services">
+                    <h3 style="color:#17405e;">Transportation Services</h3>
+                    <p>Safe, reliable transportation for medical appointments and community participation.</p>
+                </div>
+                <div class="service-card">
+                    <!-- Community Participation Support: group activity or social interaction -->
+                    <img src="https://images.pexels.com/photos/6257111/pexels-photo-6257111.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Community Participation Support">
+                    <h3 style="color:#17405e;">Community Participation Support</h3>
+                    <p>Assistance with community integration, social activities, and building meaningful relationships.</p>
+                </div>
+                <div class="service-card">
+                    <!-- Shift Nursing: nurse caring for patient -->
+                    <img src="https://images.pexels.com/photos/6129151/pexels-photo-6129151.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Shift Nursing">
+                    <h3 style="color:#17405e;">Shift Nursing</h3>
+                    <p>Professional nursing care for individuals with complex medical needs, including medication, monitoring, and personal care.</p>
+                </div>
+                <div class="service-card">
+                    <!-- Respite Care: caregiver supporting elderly -->
+                    <img src="https://images.pexels.com/photos/7551677/pexels-photo-7551677.jpeg?auto=compress&w=600&h=400&fit=crop" alt="Respite Care">
+                    <h3 style="color:#17405e;">Respite Care</h3>
+                    <p>Temporary relief for primary caregivers, ensuring loved ones receive quality care and support in a safe environment.</p>
+                </div>
+            </div>
+            <div class="center">
+                <a href="services.html" class="btn-secondary">See All Services</a>
+            </div>
+        </section>
+        <section class="about-highlight" style="background:2bb6a3  ;">
+            <div class="about-content">
+                <h2 style="color:#17405e;">About Akansoh Health Services</h2>
+                <p>We are committed to delivering high-quality, person-centered healthcare services that empower individuals to live independently and with dignity. Our experienced team provides compassionate care tailored to each client's unique needs.</p>
+                <a href="about.html" class="btn-secondary">Learn More About Us</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=600&q=80" alt="About Akansoh Health Services" class="about-img">
+        </section>
+        <section class="recent-work" style="padding:48px 0;background:#fff;">
+            <h2 style="text-align:center;color:#17405e;font-size:2.3rem;font-weight:700;margin-bottom:12px;">Our Recent Work</h2>
+            <p style="text-align:center;color:#17405e;font-size:1.1rem;margin-bottom:32px;">
+                Take a look at our recent projects and initiatives that showcase our commitment to quality care and community well-being.
+            </p>
+            <div class="recent-work-grid stylish-grid">
+                <div class="rw-img">
+                    <img loading="lazy" src="https://images.pexels.com/photos/7345459/pexels-photo-7345459.jpeg?auto=compress&w=800&h=800&fit=crop" alt="Doctor comforting patient">
+                </div>
+                <div class="rw-img">
+                    <img loading="lazy" src="https://images.pexels.com/photos/7345474/pexels-photo-7345474.jpeg?auto=compress&w=800&h=800&fit=crop" alt="Medical consultation">
+                </div>
+                <div class="rw-img">
+                    <img loading="lazy" src="https://images.pexels.com/photos/7551656/pexels-photo-7551656.jpeg?auto=compress&w=800&h=600&fit=crop" alt="Healthcare worker assisting elderly>
+                </div>
+                <div class="rw-img>
+                    <img loading="lazy" src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&w=800&h=600&fit=crop" alt="Doctor and nurse together">
+                </div>
+                <div class="rw-img">
+                    <img loading="lazy" src="https://images.pexels.com/photos/6129153/pexels-photo-6129153.jpeg?auto=compress&w=800&h=600&fit=crop" alt="Doctor and nurse discussing">
+                </div>
+                <div class="rw-img">
+                    <img loading="lazy" src="https://images.pexels.com/photos/5355730/pexels-photo-5355730.jpeg?auto=compress&w=800&h=600&fit=crop" alt="Nurse with patient">
+                </div>
+            </div>
+        </section>
+        <section class="client-feedback" style="background:#fff;padding:56px 0;">
+            <h2 style="text-align:center;color:#17405e;font-size:2.3rem;font-weight:700;margin-bottom:32px;">Client Feedback</h2>
+            <div class="feedback-grid" style="display:flex;flex-wrap:wrap;justify-content:center;gap:32px;max-width:1200px;margin:0 auto;">
+                <div class="feedback-card" style="flex:1 1 320px;max-width:340px;text-align:center;">
+                    <div style="color:#f5b942;font-size:1.3rem;margin-bottom:8px;">★★★★★</div>
+                    <p style="color:#444;font-size:1.05rem;margin-bottom:24px;">
+                        Akansoh Health Services transformed my father’s daily life. The staff is attentive and truly cares about their clients.
+                    </p>
+                    <div style="display:flex;align-items:center;justify-content:center;gap:12px;">
+                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&w=64&h=64&fit=crop" alt="Client 1" style="width:64px;height:64px;border-radius:50%;object-fit:cover;">
+                        <span style="font-weight:700;color:#17405e;">Ramon Gonzalez</span>
+                    </div>
+                </div>
+                <div class="feedback-card" style="flex:1 1 320px;max-width:340px;text-align:center;">
+                    <div style="color:#f5b942;font-size:1.3rem;margin-bottom:8px;">★★★★★</div>
+                    <p style="color:#444;font-size:1.05rem;margin-bottom:24px;">
+                        The in-home support we received was exceptional. It made a significant difference for our family during a tough time.
+                    </p>
+                    <div style="display:flex;align-items:center;justify-content:center;gap:12px;">
+                        <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&w=64&h=64&fit=crop" alt="Client 2" style="width:64px;height:64px;border-radius:50%;object-fit:cover;">
+                        <span style="font-weight:700;color:#17405e;">Jane Efomo</span>
+                    </div>
+                </div>
+                <div class="feedback-card" style="flex:1 1 320px;max-width:340px;text-align:center;">
+                    <div style="color:#f5b942;font-size:1.3rem;margin-bottom:8px;">★★★★★</div>
+                    <p style="color:#444;font-size:1.05rem;margin-bottom:24px;">
+                        I can’t thank Akansoh enough for their kindness and professionalism. They were there for us every step of the way.
+                    </p>
+                    <div style="display:flex;align-items:center;justify-content:center;gap:12px;">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&w=64&h=64&fit=crop" alt="Client 3" style="width:64px;height:64px;border-radius:50%;object-fit:cover;">
+                        <span style="font-weight:700;color:#17405e;">Emily Johnson</span>
+                    </div>
+                </div>
+                <div class="feedback-card" style="flex:1 1 320px;max-width:340px;text-align:center;">
+                    <div style="color:#f5b942;font-size:1.3rem;margin-bottom:8px;">★★★★★</div>
+                    <p style="color:#444;font-size:1.05rem;margin-bottom:24px;">
+                        The nurses from Akansoh Health Services are always punctual and friendly. Highly recommended for anyone needing home care!
+                    </p>
+                    <div style="display:flex;align-items:center;justify-content:center;gap:12px;">
+                        <img src="https://images.pexels.com/photos/1707828/pexels-photo-1707828.jpeg?auto=compress&w=64&h=64&fit=crop" alt="Client 4" style="width:64px;height:64px;border-radius:50%;object-fit:cover;">
+                        <span style="font-weight:700;color:#17405e;">Samuel Lee</span>
+                    </div>
+                </div>
+                <div class="feedback-card" style="flex:1 1 320px;max-width:340px;text-align:center;">
+                    <div style="color:#f5b942;font-size:1.3rem;margin-bottom:8px;">★★★★★</div>
+                    <p style="color:#444;font-size:1.05rem;margin-bottom:24px;">
+                        Akansoh Health Services helped my mother regain her independence. Their support and care are outstanding!
+                    </p>
+                    <div style="display:flex;align-items:center;justify-content:center;gap:12px;">
+                        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&w=64&h=64&fit=crop" alt="Client 5" style="width:64px;height:64px;border-radius:50%;object-fit:cover;">
+                        <span style="font-weight:700;color:#17405e;">Fatima Bello</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-section" style="position:relative;min-height:340px;display:flex;align-items:center;justify-content:center;">
+            <div style="
+                position:absolute;
+                top:0; left:50%;
+                width:100vw; height:100%;
+                background:url('https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&w=1600&q=80') center center/cover no-repeat;
+                transform:translateX(-50%);
+                z-index:0;
+            "></div>
+            <div style="position:absolute;top:0;left:0;width:100%;height:100%;
+                background:linear-gradient(90deg, rgba(23,64,94,0.50) 0%, rgba(43,182,163,0.40) 100%);
+                z-index:1;"></div>
+            <div class="cta-content" style="position:relative;z-index:2;text-align:center;width:100%;">
+                <h2 style="color:#fff;font-size:2.3rem;font-weight:700;margin-bottom:18px;">Start Your Journey Today</h2>
+                <p style="color:#fff;font-size:1.15rem;margin-bottom:32px;">
+                    Contact us to learn how we can support you or your loved ones with our tailored care solutions.
+                </p>
+                <a href="contact.html"
+                   class="btn-primary"
+                   style="
+                       background:linear-gradient(90deg,#17405e 0%,#2bb6a3 100%);
+                       color:#fff;
+                       font-weight:900;
+                       padding:22px 54px;
+                       border-radius:16px;
+                       box-shadow:0 6px 24px rgba(43,182,163,0.25),0 1.5px 0 #17405e inset;
+                       font-size:1.35rem;
+                       letter-spacing:1.5px;
+                       display:inline-block;
+                       border:3px solid #fff;
+                       transition:transform 0.18s,box-shadow 0.18s;
+                       text-shadow:0 2px 8px rgba(23,64,94,0.18);
+                   "
+                   onmouseover="this.style.transform='scale(1.06)';this.style.boxShadow='0 8px 32px rgba(43,182,163,0.35),0 1.5px 0 #17405e inset';"
+                   onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 6px 24px rgba(43,182,163,0.25),0 1.5px 0 #17405e inset';"
+                >
+                    CONTACT US
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer style="background:#fff;padding:48px 0 24px 0;">
+        <div style="text-align:center;">
+            <img src="images/logo2.png" alt="Akansoh Health Services Logo" style="height:320px;width:320px;display:block;margin:0 auto 18px auto;">
+            <div style="font-family:'Segoe Script',cursive;font-size:2.1rem;color:#17405e;font-weight:700;margin-bottom:8px;">
+                Akansoh Health Services
+            </div>
+            <div style="color:#2bb6a3;font-size:1.15rem;font-family:'Segoe Script',cursive;margin-bottom:18px;">
+                Delivering multifaceted healthcare solutions for wellness
+            </div>
+            <div style="color:#17405e;font-size:1rem;margin-bottom:8px;">
+                &copy; 2024 Akansoh Health Services. All rights reserved.
+            </div>
+            <div style="color:#17405e;font-size:1rem;">
+                Visit us at: <a href="http://www.akansohhealthservices.com/" style="color:#17405e;font-weight:700;">www.akansohhealthservices.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
