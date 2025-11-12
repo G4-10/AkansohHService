@@ -1,0 +1,277 @@
+/* Mobile-first responsive styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Header Mobile Responsive */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 15px 20px !important;
+        position: relative !important;
+    }
+    
+    .logo-area {
+        gap: 10px !important;
+        flex: 1 !important;
+    }
+    
+    .logo {
+        height: 50px !important;
+        width: 50px !important;
+    }
+    
+    .brand h1 {
+        font-size: 1.1rem !important;
+        margin: 0 !important;
+    }
+    
+    .brand .tagline {
+        font-size: 0.7rem !important;
+    }
+    
+    /* Mobile Navigation */
+    nav {
+        position: fixed !important;
+        top: 0 !important;
+        right: -100% !important;
+        width: 75% !important;
+        max-width: 300px !important;
+        height: 100vh !important;
+        background: #fff !important;
+        transition: right 0.3s ease !important;
+        z-index: 999 !important;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1) !important;
+        flex: none !important;
+    }
+    
+    nav.active {
+        right: 0 !important;
+    }
+    
+    nav ul {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        padding: 80px 20px 30px 20px !important;
+        gap: 15px !important;
+    }
+    
+    nav ul li {
+        width: 100% !important;
+    }
+    
+    nav ul li a {
+        display: block !important;
+        padding: 12px 10px !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+    }
+    
+    .contact-btn {
+        padding: 12px 20px !important;
+        font-size: 0.9rem !important;
+        text-align: center !important;
+        display: block !important;
+        width: 100% !important;
+    }
+}
+
+/* Hero Section Mobile */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 350px !important;
+        padding: 30px 15px !important;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.6rem !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .hero-content p {
+        font-size: 0.95rem !important;
+        margin-bottom: 20px !important;
+        padding: 0 10px !important;
+    }
+    
+    .hero .btn-primary {
+        padding: 14px 28px !important;
+        font-size: 1rem !important;
+        letter-spacing: 1px !important;
+    }
+}
+
+/* Services Section Mobile */
+@media (max-width: 768px) {
+    .services-highlight {
+        padding: 40px 15px !important;
+    }
+    
+    .services-highlight h2 {
+        font-size: 1.8rem !important;
+        margin-bottom: 25px !important;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 !important;
+    }
+    
+    .service-card {
+        margin: 0 !important;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem !important;
+    }
+    
+    .service-card p {
+        font-size: 0.95rem !important;
+    }
+}
+
+/* About Section Mobile */
+@media (max-width: 768px) {
+    .about-highlight {
+        flex-direction: column !important;
+        padding: 40px 15px !important;
+    }
+    
+    .about-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .about-content h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .about-content p {
+        font-size: 0.95rem !important;
+    }
+    
+    .about-img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 250px !important;
+        object-fit: cover !important;
+    }
+}
+
+/* Recent Work Section Mobile */
+@media (max-width: 768px) {
+    .recent-work {
+        padding: 40px 15px !important;
+    }
+    
+    .recent-work h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .recent-work p {
+        font-size: 0.95rem !important;
+        padding: 0 10px !important;
+    }
+}
+
+/* Client Feedback Mobile */
+@media (max-width: 768px) {
+    .client-feedback {
+        padding: 40px 15px !important;
+    }
+    
+    .client-feedback h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .feedback-grid {
+        padding: 0 !important;
+        gap: 20px !important;
+    }
+    
+    .feedback-card {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        padding: 20px !important;
+    }
+    
+    .feedback-card p {
+        font-size: 0.95rem !important;
+    }
+}
+
+/* CTA Section Mobile */
+@media (max-width: 768px) {
+    .cta-section {
+        min-height: 300px !important;
+        padding: 30px 15px !important;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.6rem !important;
+    }
+    
+    .cta-content p {
+        font-size: 0.95rem !important;
+        padding: 0 10px !important;
+    }
+    
+    .cta-section .btn-primary {
+        padding: 14px 28px !important;
+        font-size: 1rem !important;
+    }
+}
+
+/* Footer Mobile */
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 15px 20px 15px !important;
+    }
+    
+    footer img {
+        height: 120px !important;
+        width: 120px !important;
+    }
+    
+    footer > div > div:first-of-type {
+        font-size: 1.3rem !important;
+    }
+    
+    footer > div > div:nth-of-type(2) {
+        font-size: 0.85rem !important;
+    }
+    
+    footer > div > div:nth-of-type(3),
+    footer > div > div:nth-of-type(4) {
+        font-size: 0.85rem !important;
+    }
+}
+
+/* Button Adjustments Mobile */
+@media (max-width: 768px) {
+    .btn-secondary {
+        padding: 12px 24px !important;
+        font-size: 0.95rem !important;
+    }
+    
+    .center {
+        padding: 0 15px !important;
+    }
+}
+
+/* Prevent horizontal scroll */
+@media (max-width: 768px) {
+    section {
+        overflow-x: hidden !important;
+    }
+}
