@@ -476,48 +476,254 @@ footer a {
     background: #38b755;
 }
 
+/* Mobile & Tablet Responsive Styles */
 @media (max-width: 900px) {
-    .hero, .about-highlight, .about-hero {
+    /* Header & Navigation */
+    header.main-header {
         flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+    }
+    
+    .logo-area {
+        flex-direction: column;
+        gap: 12px;
         text-align: center;
     }
-    .hero-content, .about-content, .about-hero-content {
+    
+    .logo {
+        height: 80px;
+        width: 80px;
+    }
+    
+    .brand h1 {
+        font-size: 1.5rem;
+    }
+    
+    .brand .tagline {
+        font-size: 0.9rem;
+    }
+    
+    nav {
+        width: 100%;
+        padding: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 0;
+    }
+    
+    nav ul li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li .contact-btn {
+        padding: 12px 32px;
+        font-size: 1rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        padding: 32px 20px;
+        text-align: center;
+    }
+    
+    .hero-content {
         max-width: 100%;
     }
-    .hero-img, .about-img, .about-hero-img {
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .hero-img {
         max-width: 100%;
+        margin-top: 24px;
+    }
+    
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .service-card {
+        width: 100%;
+        max-width: 400px;
         margin: 0 auto;
     }
-    .services-grid {
+    
+    /* About Section */
+    .about-highlight {
         flex-direction: column;
-        gap: 24px;
+        padding: 32px 20px;
+    }
+    
+    .about-hero {
+        flex-direction: column;
+    }
+    
+    .about-content, .about-hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .about-img, .about-hero-img {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 24px;
+    }
+    
+    /* Recent Work Grid */
+    .recent-work-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 16px;
+        padding: 0 20px;
+    }
+    
+    .rw-img1, .rw-img2, .rw-img3, .rw-img4, .rw-img5, .rw-img6 {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    .rw-img img {
+        height: 250px;
+    }
+    
+    .stylish-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 16px;
+        padding: 0 20px;
+    }
+    
+    /* Compassion Hero */
+    .compassion-hero {
+        min-height: 280px;
+    }
+    
+    .compassion-hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .compassion-hero-content p {
+        font-size: 1rem;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        padding: 32px 20px;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+    }
+    
+    /* Contact Form */
+    .contact-form {
+        max-width: 100%;
+        padding: 24px;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 32px 20px;
+    }
+    
+    .footer-logo img {
+        height: 70px;
+    }
+    
+    /* Main Container */
+    main {
+        width: 95%;
     }
 }
 
 @media (max-width: 600px) {
-    .logo-area, nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    nav ul {
-        width: 100%;
-        padding: 0;
-    }
-    nav ul li {
-        margin: 6px 0;
-    }
-    main {
-        width: 98%;
-        padding: 0 1%;
-    }
-    .service-card {
-        width: 100%;
+    /* Extra small screens */
+    header.main-header {
         padding: 16px;
     }
-    .about-highlight, .about-hero {
-        padding: 20px 2%;
+    
+    .brand h1 {
+        font-size: 1.2rem;
     }
-    .cta-section {
-        padding: 24px 2%;
+    
+    .brand .tagline {
+        font-size: 0.85rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+    
+    .services-highlight h2,
+    .services-list h2,
+    .about-content h2,
+    .cta-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .compassion-btn {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+    
+    .rw-img img {
+        height: 200px;
+    }
+    
+    .service-card {
+        padding: 16px;
+    }
+    
+    .service-card img {
+        height: 150px;
+    }
+    
+    .compassion-hero {
+        min-height: 240px;
+    }
+    
+    .compassion-hero-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .compassion-hero-content p {
+        font-size: 0.95rem;
+    }
+    
+    .about-highlight, .about-hero, .cta-section {
+        padding: 24px 16px;
+    }
+    
+    main {
+        width: 98%;
     }
 }
